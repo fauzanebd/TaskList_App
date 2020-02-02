@@ -29,8 +29,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnDeleteAcc: Button
 
     private var currentUser: String? = null
-    private lateinit var btnFeedback: Button
-
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,8 +50,6 @@ class MainActivity : AppCompatActivity() {
         rvTasks = findViewById(R.id.rv_taskList)
         rvTasks.setHasFixedSize(true)
         rvTasks.layoutManager = LinearLayoutManager(this)
-
-        //ambil data dari firebase
         database = FirebaseDatabase.getInstance()
 
         reference = database.reference.child("TaskListApp").child(currentUser.toString())
@@ -111,8 +107,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnDeleteAcc.typeface = CircularMedium
-        btnDeleteAcc.setOnClickListener{ v ->
-            if(v.id == R.id.btn_delete_account){
+        btnDeleteAcc.setOnClickListener { v ->
+            if (v.id == R.id.btn_delete_account) {
                 reference = database.reference.child("TaskListApp").child(currentUser.toString())
                 reference.removeValue().addOnCompleteListener {
                     if (it.isSuccessful) {
@@ -131,17 +127,6 @@ class MainActivity : AppCompatActivity() {
                         ).show()
                     }
                 }
-            }
-        }
-
-        btnFeedback=findViewById(R.id.btn_feedback)
-        btnFeedback.typeface=CircularMedium
-        btnFeedback.setOnClickListener{ v->
-            if(v.id==R.id.btn_feedback) {
-                val someWeb = "https://forms.gle/y6qfRp5ZZqwzYEQm7"
-                val urlIntent = Intent(Intent.ACTION_VIEW)
-                urlIntent.data = Uri.parse(someWeb)
-                startActivity(urlIntent)
             }
         }
 

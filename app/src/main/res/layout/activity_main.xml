@@ -112,17 +112,4 @@
         android:textColor="#AFAFAF"
         android:textSize="22sp" />
 
-    <Button
-        android:id="@+id/btn_feedback"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="32dp"
-        android:background="@drawable/bg_btn_cancel"
-        android:text="@string/send_feedback"
-        android:textAllCaps="false"
-        android:textColor="#AFAFAF"
-        android:textSize="22sp" />
-
 </LinearLayout>
