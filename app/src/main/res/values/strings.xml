@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Task List App</string>
+    <string name="endText">No More Tasks</string>
+    <string name="subtitle">Finish Them Quickly Today</string>
+    <string name="add_a_new_task">Add a new task</string>
+    <string name="task_title">Task Title</string>
+    <string name="what_would_you_do">What would you do?</string>
+    <string name="task_description">Task Description</string>
+    <string name="enter_task_details">Enter task details...</string>
+    <string name="due_date">Due Date</string>
+    <string name="when_do_you_do_it">When do you do it?</string>
+    <string name="create_task">Create Task</string>
+    <string name="cancel">Cancel</string>
+    <string name="save_change">Save Change</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="username">Username</string>
+    <string name="username_hint">Username...</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="my_tasks">My Tasks</string>
+    <string name="addition">+</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="to_start_using_this_application">To start using this application</string>
+    <string name="full_name">Full Name</string>
+    <string name="example_john_cena">Example: John Cena</string>
+    <string name="example_johncenaganteng">Example: johncenaganteng</string>
+    <string name="use_a_strong_and_memorable_password">use a strong and memorable password</string>
+    <string name="buy_whiskas">Buy Whiskas</string>
+    <string name="at_nearest_market">At nearest market</string>
+    <string name="delete_my_account">Delete My Account</string>
+    <string name="to_add_task_press_button_on_the_right_top_corner">To add task, press + button on the right-top corner</string>
+    <string name="send_feedback">Send Feedback</string>
+</resources>

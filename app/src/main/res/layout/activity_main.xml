@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:background="@drawable/bg_view_rounded"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:text="@string/my_tasks"
+                    android:textColor="#FFF"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/subtitle_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/subtitle"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_addnew"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="60dp"
+                android:text="@string/addition"
+                android:background="@drawable/bg_btn"
+                android:textColor="#FFF"
+                android:textAlignment="center"
+                android:textSize="38sp"
+                android:layout_width="52dp"
+                android:layout_height="52dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_view_rounded"
+            android:baselineAligned="false"
+            android:outlineProvider="none" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_taskList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="16dp"
+        tools:listitem="@layout/item_tasks"/>
+
+    <TextView
+        android:id="@+id/end_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:text="@string/to_add_task_press_button_on_the_right_top_corner"
+        android:lines="2"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/bg_btn_cancel"
+        android:text="@string/sign_out"
+        android:textAllCaps="false"
+        android:textColor="#AFAFAF"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_delete_account"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/bg_btn_cancel"
+        android:text="@string/delete_my_account"
+        android:textAllCaps="false"
+        android:textColor="#AFAFAF"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/bg_btn_cancel"
+        android:text="@string/send_feedback"
+        android:textAllCaps="false"
+        android:textColor="#AFAFAF"
+        android:textSize="22sp" />
+
+</LinearLayout>
